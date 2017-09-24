@@ -18,7 +18,7 @@ frequent_words_list = ['и', 'в', 'не', 'на', 'я', 'быть', 'он', 'с
                        'большой', 'должен', 'место', 'иметь', 'ничто',  'а'
                        ]
 
-result_dict = {i: 0 for i in frequent_words_list}
+result_dict = {frequent_word: 0 for frequent_word in frequent_words_list}
 
 
 def load_data(filepath):
@@ -27,9 +27,9 @@ def load_data(filepath):
     with open(filepath) as source_file:
         for line in source_file:
             for word in (line.rstrip()).split(' '):
-                for i in range(len(frequent_words_list)):
-                    if frequent_words_list[i] == word:
-                        result_dict[frequent_words_list[i]] += 1
+                for frequent_word in range(len(frequent_words_list)):
+                    if frequent_words_list[frequent_word] == word:
+                        result_dict[frequent_words_list[frequent_word]] += 1
     return result_dict
 
 
