@@ -27,17 +27,16 @@ def load_data(filepath):
     with open(filepath) as source_file:
         for line in source_file:
             for i in (line.rstrip()).split(' '):
-                for j in range(0, len(frequent_words_list)):
+                for j in range(len(frequent_words_list)):
                     if frequent_words_list[j] == i:
                         result_dict[frequent_words_list[j]] += 1
     return result_dict
 
 
 def get_most_frequent_words(words_dict):
-    print(words_dict)
-    for i in sorted(words_dict.items(), key=lambda x: x[1], reverse=True)[:10]:
-        print('Слово ' + '\'' + i[0] + '\'',
-              ' встречается ' + str(i[1]) + 'раз')
+    for pair in sorted(words_dict.items(), key=lambda x: x[1], reverse=True)[:10]:
+        print('Слово ' + '\'' + pair[0] + '\'',
+              ' встречается ' + str(pair[1]) + 'раз')
 
 
 if __name__ == '__main__':
