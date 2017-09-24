@@ -26,10 +26,10 @@ def load_data(filepath):
         return None
     with open(filepath) as source_file:
         for line in source_file:
-            for i in (line.rstrip()).split(' '):
-                for j in range(len(frequent_words_list)):
-                    if frequent_words_list[j] == i:
-                        result_dict[frequent_words_list[j]] += 1
+            for word in (line.rstrip()).split(' '):
+                for i in range(len(frequent_words_list)):
+                    if frequent_words_list[i] == word:
+                        result_dict[frequent_words_list[i]] += 1
     return result_dict
 
 
