@@ -14,7 +14,8 @@ def load_data(filepath):
     return collections_counter
 
 def get_most_frequent_words(words_dict):
-    for pair in words_dict.most_common(10):
+    most_popular_words = 10
+    for pair in words_dict.most_common(most_popular_words):
         print('Слово ' + '\'' + pair[0] + '\'',
               ' встречается ' + str(pair[1]) + ' раз(а)')
 
