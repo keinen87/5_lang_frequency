@@ -10,7 +10,7 @@ def load_data(filepath):
 
 
 def data_prepare(raw_data):
-    words_list = [item for element in raw_data for item in element ]
+    words_list = [word for element in raw_data for word in element ]
     return words_list
 
 
