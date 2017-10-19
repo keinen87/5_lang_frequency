@@ -6,18 +6,18 @@ You may put in script folder a txt file(Where_are_you.txt in repository - exampl
 Launch on Linux( Python 3.5 ) or Windows as simple
 ```bash
 # For example,
-$ python lang_frequency.py Where_are_you.txt
+$ python lang_frequency.py a_single_man.txt
 # You will see:
- The word 'и' meet 1427 time(s)
- The word 'в' meet 1343 time(s)
- The word 'на' meet 951 time(s)
- The word 'не' meet 950 time(s)
- The word 'что' meet 650 time(s)
- The word 'с' meet 534 time(s)
- The word 'я' meet 460 time(s)
- The word 'она' meet 420 time(s)
- The word 'к' meet 365 time(s)
- The word 'ты' meet 356 time(s)
+ 1 word 'the' meets 1873 time(s)
+ 2 word 'to' meets 1155 time(s)
+ 3 word 'of' meets 1045 time(s)
+ 4 word 'and' meets 1001 time(s)
+ 5 word 'a' meets 896 time(s)
+ 6 word 'is' meets 655 time(s)
+ 7 word 'I' meets 618 time(s)
+ 8 word 'in' meets 557 time(s)
+ 9 word 'it' meets 550 time(s)
+ 10 word 'you' meets 547 time(s)s)
 ```
 
 # Project Goals
