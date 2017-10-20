@@ -20,5 +20,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     filepath = args.filepath
     most_frequent_words = get_most_frequent_words(get_words_list(filepath))
-    for i, pair in enumerate(most_frequent_words, 1):
-        print('{} word \'{}\' meets {} time(s)'.format(i, pair[0], pair[1]))
+    for i, (word, time) in enumerate(most_frequent_words, 1):
+        print('{}. \'{}\' meets {} time(s)'.format(i, word, time))
