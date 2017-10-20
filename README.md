@@ -2,12 +2,12 @@
 The script shows 10 most frequent words in a file
 
 # Quickstart
-You may put in script folder a txt file(a_single_man.txt in repository - example) or input path to file
+You may put in script folder a txt file or input path to file
 Launch on Linux( Python 3.5 ) or Windows as simple
 ```bash
 # For example,
-$ python lang_frequency.py a_single_man.txt
-# You will see:
+$ python lang_frequency.py <file.txt>
+# You will see, for example:
 1. 'the' meets 1873 time(s)
 2. 'to' meets 1155 time(s)
 3. 'of' meets 1045 time(s)
